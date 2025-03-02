@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB</title>
+    <link rel="stylesheet" href="S.css" />
+    <script src="../custom-scripts.js" defer></script>
+  </head>
+  <body>
+    <main>
+      
+      <header>
+        <nav class="nav container">
+          <h2 class="nav_logo"><a href="#">Sbewo Mini-App</a></h2>
+        </nav>
+      </header>
+      
+      <section class="hero">
+        <div class="row container">
+          <div class="column">
+            <h2>Знакомьтесь!<br />Ваш новый персональный менеджер - Sbewo!</h2>
+            <p>Sbewo - это многофункциональный бот в формате мини-приложения,<br> который станет незаменимым помощником в вашей самоорганизации<br> и личной эффективности. 
+              Финансовые трекеры, управление привычками,<br> контроль здоровья и многое другое – всё это доступно в одном месте!<br>Вы великолепны, сделав первый шаг к тому, чтобы стать более<br> организованным человеком. Вместе мы достигнем любых целей!</p>
+            <div class="buttons">
+              <button class="btn">Поехали !</button>
+              <button class="btn">О нас</button>
+            </div>
+          </div>
+        </div>
+        <img src="hoho.png" alt="" class="curveImg" />
+      </section>
+      
+    </main>
+
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+    </script>
+    
+  </body>
+</html>
